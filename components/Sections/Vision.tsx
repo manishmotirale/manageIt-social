@@ -28,7 +28,7 @@ const Vision: React.FC = () => {
       <CheckerStrip />
 
       {/* ===================== */}
-      {/* OUR VISION SECTION   */}
+      {/* OUR VISION SECTION */}
       {/* ===================== */}
       <div className="bg-brand-dark text-white relative py-16 sm:py-20 md:py-32 w-full">
         <div className="max-w-[1600px] mx-auto px-4 sm:px-6 md:px-12 relative z-10 flex flex-col items-center text-center">
@@ -54,7 +54,6 @@ const Vision: React.FC = () => {
             </h2>
           </Reveal>
 
-          {/* 🔥 FONT SIZE MATCHED HERE */}
           <Reveal delay={0.2}>
             <p className="font-body text-base sm:text-lg md:text-xl lg:text-2xl max-w-4xl text-gray-200 leading-relaxed">
               Marketing that looks good is nice.
@@ -70,7 +69,7 @@ const Vision: React.FC = () => {
       </div>
 
       {/* ===================== */}
-      {/* HOW WE OPERATE       */}
+      {/* HOW WE OPERATE */}
       {/* ===================== */}
       <div className="bg-brand-orange text-white py-16 sm:py-20 md:py-32 relative w-full">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 text-center relative z-10 flex flex-col items-center">
@@ -93,28 +92,22 @@ const Vision: React.FC = () => {
           <Reveal delay={0.4}>
             <div className="font-display text-xl sm:text-2xl md:text-3xl lg:text-4xl mt-10 md:mt-16 space-y-3 md:space-y-4">
               <p>
-                <span className="font-bold" style={{ color: "#345C72" }}>
-                  Execution
-                </span>{" "}
+                <span className="font-bold text-brand-dark">Execution</span>{" "}
                 follows.
               </p>
               <p>
-                <span className="font-bold" style={{ color: "#345C72" }}>
-                  Tracking
-                </span>{" "}
-                is constant.
+                <span className="font-bold text-brand-dark">Tracking</span> is
+                constant.
               </p>
               <p>
-                <span className="font-bold" style={{ color: "#345C72" }}>
-                  Decisions
-                </span>{" "}
-                are data-led.
+                <span className="font-bold text-brand-dark">Decisions</span> are
+                data-led.
               </p>
             </div>
           </Reveal>
         </div>
 
-        {/* Starburst Right */}
+        {/* Starburst */}
         <div className="absolute -right-16 md:-right-24 top-1/2 -translate-y-1/2 hidden md:block">
           <div className="w-40 h-40 sm:w-56 sm:h-56 md:w-[28rem] md:h-[28rem] rounded-full bg-brand-dark flex items-center justify-center p-6 md:p-12 shadow-2xl">
             <StarBurst color="#FA934D" className="w-full h-full" />
@@ -124,6 +117,53 @@ const Vision: React.FC = () => {
 
       {/* Bottom Chess Strip */}
       <CheckerStrip />
+
+      {/* ===================== */}
+      {/* FINAL CTA SECTION — WHITE GRID */}
+      {/* ===================== */}
+      <section className="relative bg-[#F4F0EA] py-16 md:py-24 px-6 md:px-8 lg:px-16 overflow-hidden">
+        {/* Grid Background */}
+        <div
+          className="absolute inset-0 opacity-40"
+          style={{
+            backgroundImage: `
+              linear-gradient(#345C72 1px, transparent 1px),
+              linear-gradient(90deg, #345C72 1px, transparent 1px)
+            `,
+            backgroundSize: "40px 40px",
+          }}
+        />
+
+        {/* Content */}
+        <div className="relative z-10 max-w-4xl mx-auto text-center flex flex-col items-center">
+          {/* Small label */}
+          <span className="block font-body text-brand-teal text-base md:text-lg font-bold uppercase tracking-wider mb-4">
+            Manage It
+          </span>
+
+          {/* Main slogan — centered & smaller than About */}
+          <h2
+            className="
+      font-display
+      text-2xl
+      sm:text-3xl
+      md:text-4xl
+      lg:text-5xl
+      xl:text-6xl
+      text-brand-orange
+      leading-tight
+      tracking-tight
+    "
+          >
+            If your marketing feels{" "}
+            <span className="text-brand-dark">busy</span>
+            <br />
+            but growth feels <span className="text-brand-dark">slow</span>,
+            <br />
+            it’s time to <span className="italic">manage it better.</span>
+          </h2>
+        </div>
+      </section>
     </section>
   );
 };

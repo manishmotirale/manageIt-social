@@ -20,11 +20,10 @@ const About: React.FC = () => {
         overflow-hidden
       "
     >
-      {/* ================= LEFT SHAPES (HERO STYLE) ================= */}
+      {/* ================= LEFT SHAPES ================= */}
       <div className="hidden md:flex w-5/12 justify-center gap-10 md:-translate-y-12 lg:-translate-y-16">
-        {/* ---------- COLUMN 1 ---------- */}
+        {/* COLUMN 1 */}
         <div className="flex flex-col gap-8 items-center">
-          {/* Dark blue pill */}
           <PillShape
             color="#345C72"
             className="w-28 h-64 lg:w-32 lg:h-72 shadow-xl"
@@ -32,7 +31,6 @@ const About: React.FC = () => {
             <SquiggleVertical color="#FA934D" className="mx-auto scale-125" />
           </PillShape>
 
-          {/* Small flower */}
           <PillShape
             color="#345C72"
             className="w-24 h-24 lg:w-28 lg:h-28 shadow-lg"
@@ -40,7 +38,6 @@ const About: React.FC = () => {
             <FlowerShape className="w-12 h-12 lg:w-14 lg:h-14" />
           </PillShape>
 
-          {/* Orange pill */}
           <PillShape
             color="#FA934D"
             className="w-28 h-64 lg:w-32 lg:h-72 shadow-xl"
@@ -49,9 +46,8 @@ const About: React.FC = () => {
           </PillShape>
         </div>
 
-        {/* ---------- COLUMN 2 ---------- */}
+        {/* COLUMN 2 */}
         <div className="flex flex-col gap-8 items-center mt-16">
-          {/* Orange pill */}
           <PillShape
             color="#FA934D"
             className="w-28 h-72 lg:w-32 lg:h-80 shadow-xl"
@@ -59,7 +55,6 @@ const About: React.FC = () => {
             <SquiggleVertical color="#F4F0EA" className="mx-auto scale-125" />
           </PillShape>
 
-          {/* Star */}
           <PillShape
             color="#345C72"
             className="w-24 h-24 lg:w-28 lg:h-28 shadow-lg"
@@ -67,7 +62,6 @@ const About: React.FC = () => {
             <StarBurst className="w-12 h-12 lg:w-14 lg:h-14" />
           </PillShape>
 
-          {/* Orange pill */}
           <PillShape
             color="#FA934D"
             className="w-28 h-64 lg:w-32 lg:h-72 shadow-xl"
@@ -97,7 +91,7 @@ const About: React.FC = () => {
           </h2>
         </div>
 
-        {/* Content box */}
+        {/* BOX 1 */}
         <div className="bg-brand-teal p-8 md:p-16 shadow-[16px_16px_0px_rgba(32,78,98,1)] rounded-2xl border-2 border-brand-dark">
           <p className="text-white text-right text-lg md:text-3xl lg:text-4xl leading-relaxed">
             We don't do guesswork. We don't chase trends for vanity. We build
@@ -107,6 +101,24 @@ const About: React.FC = () => {
               storytelling
             </span>
             , and systems that actually work.
+          </p>
+        </div>
+
+        {/* spacing */}
+        <div className="h-8 md:h-12"></div>
+
+        {/* BOX 2 — UPDATED CONTENT */}
+        <div className="bg-brand-teal p-8 md:p-16 shadow-[16px_16px_0px_rgba(32,78,98,1)] rounded-2xl border-2 border-brand-dark">
+          <p className="text-white text-right text-lg md:text-3xl lg:text-4xl leading-relaxed">
+            We believe in making{" "}
+            <span className="text-brand-orange font-extrabold">impact</span>,
+            not just noise. Your brand deserves to be heard by the{" "}
+            <span className="text-brand-orange font-extrabold">
+              right people
+            </span>
+            , at the{" "}
+            <span className="text-brand-orange font-extrabold">right time</span>
+            .
           </p>
         </div>
       </div>
