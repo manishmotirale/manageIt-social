@@ -26,7 +26,7 @@ const About: React.FC = () => {
         <div className="flex flex-col gap-8 items-center">
           {/* Dark blue pill */}
           <PillShape
-            color="#204E62"
+            color="#345C72"
             className="w-28 h-64 lg:w-32 lg:h-72 shadow-xl"
           >
             <SquiggleVertical color="#FA934D" className="mx-auto scale-125" />
@@ -34,7 +34,7 @@ const About: React.FC = () => {
 
           {/* Small flower */}
           <PillShape
-            color="#2B687F"
+            color="#345C72"
             className="w-24 h-24 lg:w-28 lg:h-28 shadow-lg"
           >
             <FlowerShape className="w-12 h-12 lg:w-14 lg:h-14" />
@@ -45,7 +45,7 @@ const About: React.FC = () => {
             color="#FA934D"
             className="w-28 h-64 lg:w-32 lg:h-72 shadow-xl"
           >
-            <SquiggleVertical color="#204E62" className="mx-auto scale-125" />
+            <SquiggleVertical color="#345C72" className="mx-auto scale-125" />
           </PillShape>
         </div>
 
@@ -61,7 +61,7 @@ const About: React.FC = () => {
 
           {/* Star */}
           <PillShape
-            color="#204E62"
+            color="#345C72"
             className="w-24 h-24 lg:w-28 lg:h-28 shadow-lg"
           >
             <StarBurst className="w-12 h-12 lg:w-14 lg:h-14" />
@@ -76,7 +76,7 @@ const About: React.FC = () => {
           </PillShape>
 
           <PillShape
-            color="#2B687F"
+            color="#345C72"
             className="w-24 h-24 lg:w-28 lg:h-28 shadow-lg"
           >
             <FlowerShape className="w-12 h-12 lg:w-14 lg:h-14" />

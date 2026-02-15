@@ -39,7 +39,7 @@ const Navbar: React.FC = () => {
         {/* Links Pill (same UI, just scaled) */}
         <div
           className="
-    flex bg-brand-dark rounded-full
+    flex bg-[#345C72] rounded-full
     h-10 sm:h-12 md:h-14
     items-center justify-between
     px-4 sm:px-6 md:px-10

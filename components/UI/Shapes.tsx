@@ -3,7 +3,7 @@ import React from "react";
 /* -------------------- SQUIGGLES -------------------- */
 
 export const SquiggleVertical = ({
-  color = "#204E62",
+  color = "#345C72",
   className = "",
 }: {
   color?: string;
@@ -20,14 +20,14 @@ export const SquiggleVertical = ({
     <path
       d="M20 5 C35 15, 35 35, 20 45 C5 55, 5 75, 20 85 C35 95, 35 115, 20 125 C5 135, 5 155, 20 165"
       stroke={color}
-      strokeWidth="6"
+      strokeWidth="5"
       strokeLinecap="round"
     />
   </svg>
 );
 
 export const TripleSquiggle = ({
-  color = "#204E62",
+  color = "#345C72",
   className = "",
 }: {
   color?: string;
@@ -195,4 +195,3 @@ export const PillShape = ({
     {children}
   </div>
 );
-
