@@ -94,58 +94,50 @@ const About: React.FC = () => {
           </div>
 
           {/* BOX 1 */}
-          <div
-            className="
-            bg-brand-teal
-            p-6 sm:p-8 md:p-16
-            shadow-[10px_10px_0px_rgba(32,78,98,1)]
-            md:shadow-[16px_16px_0px_rgba(32,78,98,1)]
-            rounded-2xl
-            border-2 border-brand-dark
-            w-full
-          "
-          >
-            <p
-              className="
-    text-white
-    text-justify
-    text-lg sm:text-xl md:text-3xl lg:text-4xl
-    leading-relaxed
-  "
-            >
-              We don't do guesswork. We don't chase trends for vanity. We build
-              businesses that grow with{" "}
-              <span className="text-brand-orange font-extrabold">strategy</span>
-              ,{" "}
-              <span className="text-brand-orange font-extrabold">
-                storytelling
-              </span>
-              , and systems that actually work.
-            </p>
+          <div className="w-full max-w-2xl md:max-w-4xl lg:max-w-5xl mx-auto md:mx-0">
+            <div className="bg-brand-teal p-6 sm:p-8 md:p-16 shadow-[10px_10px_0px_rgba(32,78,98,1)] rounded-2xl border-2 border-brand-dark w-full">
+              <p className="text-white text-justify break-words text-lg sm:text-xl md:text-2xl lg:text-3xl leading-relaxed">
+                We don't do guesswork. We don't chase trends for vanity. We
+                build businesses that grow with{" "}
+                <span className="text-brand-orange font-extrabold">
+                  strategy
+                </span>
+                ,{" "}
+                <span className="text-brand-orange font-extrabold">
+                  storytelling
+                </span>
+                , and systems that actually work.
+              </p>
+            </div>
           </div>
 
           {/* spacing */}
           <div className="h-6 md:h-12"></div>
 
           {/* BOX 2 */}
+          {/* BOX 2 */}
           <div
             className="
-            bg-brand-teal
-            p-6 sm:p-8 md:p-16
-            shadow-[10px_10px_0px_rgba(32,78,98,1)]
-            md:shadow-[16px_16px_0px_rgba(32,78,98,1)]
-            rounded-2xl
-            border-2 border-brand-dark
-            w-full
-          "
+    bg-brand-teal
+    p-6 sm:p-8 md:p-16
+    shadow-[10px_10px_0px_rgba(32,78,98,1)]
+    md:shadow-[16px_16px_0px_rgba(32,78,98,1)]
+    rounded-2xl
+    border-2 border-brand-dark
+    w-full
+  "
           >
             <p
               className="
-    text-white
-    text-justify
-    text-lg sm:text-xl md:text-3xl lg:text-4xl
-    leading-relaxed
-  "
+      text-white
+      text-justify
+      break-words
+
+      text-lg sm:text-xl md:text-2xl lg:text-3xl
+      leading-relaxed
+
+      max-w-2xl md:max-w-4xl lg:max-w-5xl
+    "
             >
               We believe in making{" "}
               <span className="text-brand-orange font-extrabold">impact</span>,
