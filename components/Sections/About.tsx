@@ -107,11 +107,11 @@ const About: React.FC = () => {
           >
             <p
               className="
-              text-white
-              text-left md:text-right
-              text-lg sm:text-xl md:text-3xl lg:text-4xl
-              leading-relaxed
-            "
+    text-white
+    text-justify
+    text-lg sm:text-xl md:text-3xl lg:text-4xl
+    leading-relaxed
+  "
             >
               We don't do guesswork. We don't chase trends for vanity. We build
               businesses that grow with{" "}
@@ -141,11 +141,11 @@ const About: React.FC = () => {
           >
             <p
               className="
-              text-white
-              text-left md:text-right
-              text-lg sm:text-xl md:text-3xl lg:text-4xl
-              leading-relaxed
-            "
+    text-white
+    text-justify
+    text-lg sm:text-xl md:text-3xl lg:text-4xl
+    leading-relaxed
+  "
             >
               We believe in making{" "}
               <span className="text-brand-orange font-extrabold">impact</span>,
@@ -162,7 +162,6 @@ const About: React.FC = () => {
           </div>
         </div>
       </div>
-      
     </section>
   );
 };

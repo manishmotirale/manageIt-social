@@ -1,6 +1,5 @@
 import React from "react";
 import { Reveal } from "../UI/Reveal";
-import "../../styles/hero.css";
 import {
   FlowerShape,
   SquiggleVertical,
@@ -13,39 +12,30 @@ const Hero: React.FC = () => {
     <section
       id="home"
       className="
-    hero-section
-    flex flex-row
-    items-start justify-between
-    relative overflow-hidden
-
-    px-4 sm:px-6 md:px-12 lg:px-20
-    pt-16 sm:pt-20 md:pt-28 pb-6
-  "
+        flex flex-row items-start justify-between
+        relative overflow-hidden overflow-x-hidden
+        /* FIX 1: Changed h-[75vh] to h-auto. This removes the forced huge height on mobile. */
+        h-auto md:h-auto 
+        px-4 sm:px-6 md:px-12 lg:px-20
+        pt-24 sm:pt-28 pb-0
+      "
     >
       {/* LEFT TEXT */}
-      <div
-        className="
-  w-[55%]              /* give text more space */
-  shrink-0
-  z-10
-  flex flex-col items-start
-  pt-2 sm:pt-4 md:pt-12
-"
-      >
+      <div className="w-1/2 max-w-[50%] shrink-0 z-10 flex flex-col items-start justify-start pt-3 md:pt-12 lg:pt-16 origin-top-left ml-3">
         <Reveal>
-          <h1 className="font-display text-[2.5rem] sm:text-[3.5rem] md:text-[4.5rem] lg:text-[6.5rem] xl:text-[7.5rem] text-brand-orange leading-[1.05]">
+          <h1 className="font-display text-[2.5rem] sm:text-[3.5rem] md:text-[4.5rem] lg:text-[6.5rem] xl:text-[7.5rem] text-brand-orange leading-[1.1]">
             NO OFFENSE,
           </h1>
         </Reveal>
 
         <Reveal delay={0.2}>
-          <h2 className="font-display text-[1.4rem] sm:text-[2.1rem] md:text-[3.5rem] lg:text-[4rem] text-[#345C72] mt-3 mb-6 max-w-3xl">
+          <h2 className="font-display text-[1.4rem] sm:text-[2.1rem] md:text-[3.5rem] lg:text-[4rem] text-[#345C72] mt-4 mb-6 max-w-3xl">
             But we do marketing better than your current agency.
           </h2>
         </Reveal>
 
         <Reveal delay={0.4}>
-          <div className="bg-[#FFDcb0] px-2  text-center py-1 rounded-2xl shadow-sm">
+          <div className="bg-[#FFDcb0] px-1 text-center py-1 rounded-2xl shadow-sm">
             <p className="text-brand-dark font-bold text-lg">
               For brands that refuse to blend in
             </p>
@@ -56,18 +46,14 @@ const Hero: React.FC = () => {
       {/* RIGHT SHAPES */}
       <div
         className="
-  w-[45%]
-  shrink-0
-  flex flex-row
-  items-start justify-end
-
-  gap-3 sm:gap-6 md:gap-10
-
-  relative
-
-  scale-[0.65] sm:scale-[0.75] md:scale-100
-  origin-top-right
-"
+          w-1/2 shrink-0 flex flex-row items-start justify-end gap-6 md:gap-10 relative 
+          pr-6 md:pr-12 
+          origin-top-right
+          scale-[0.65] sm:scale-[0.8] md:scale-100 
+          /* FIX 2: Added negative margin bottom. 
+             This eats up the 'ghost space' left by the scale-[0.65]. */
+          -mb-40 sm:-mb-20 md:mb-0
+        "
       >
         {/* COLUMN 1 */}
         <div className="flex flex-col gap-6 md:gap-8">

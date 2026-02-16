@@ -7,32 +7,39 @@ import Vision from "./components/Sections/Vision";
 import Work from "./components/Sections/Work";
 import Contact from "./components/Sections/Contact";
 import Footer from "./components/Layout/Footer";
-import "./styles/hero.css";
-
 
 const App: React.FC = () => {
   return (
-    <div className="relative w-full overflow-hidden text-brand-text">
+    <div className="relative w-full overflow-x-hidden text-brand-text">
+      {/* Background */}
       <InteractiveGridBackground />
+
+      {/* Navbar */}
       <Navbar />
 
-      <main className="relative z-10">
+      {/* Main Content */}
+      <main className="relative z-10 w-full">
+        {/* Hero */}
         <Hero />
 
+        {/* About */}
         <section id="about" className="scroll-mt-32">
           <About />
         </section>
 
+        {/* Services */}
         <section id="services" className="scroll-mt-32">
           <Work />
           <Vision />
         </section>
 
+        {/* Contact */}
         <section id="contact" className="scroll-mt-32">
           <Contact />
         </section>
-      </main> 
+      </main>
 
+      {/* Footer */}
       <Footer />
     </div>
   );
